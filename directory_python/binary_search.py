@@ -47,7 +47,7 @@ def binary_search(arr: np.array, target: int) -> int:
 
 if __name__ == '__main__':
 
-    arr = np.arange(100_000)
+    arr = np.arange(1_000_000)
     target = 567
 
     start_time_linear = time.time()
@@ -63,7 +63,10 @@ if __name__ == '__main__':
     processing_time_binary = end_time_binary - start_time_binary
     print(f'{processing_time_binary:.10f} seconds.')
 
-    times_faster = processing_time_linear/processing_time_binary
+    if processing_time_binary == 0:
+        times_faster = np.inf
+    else:
+        times_faster = processing_time_linear/processing_time_binary
 
     print(
         f'Binary search is {times_faster:.2f} times faster than linear search.')

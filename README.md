@@ -17,5 +17,5 @@ You can find the implementation of binary search in the file: [Python Binary Sea
 #### Performance Comparison
 In addition to implementing binary search, this chapter includes a performance comparison between binary search and linear search:
 
-- **Observations**: Binary search was found to be approximately 10 times faster than linear search in tests using Python.
+- **Observations**: Binary search was found to be approximately 10 times faster than linear search in tests using Python in MacBook Air M1.
 - **Logging**: The code logs processing times for both searches, illustrating the efficiency gains with binary search.
